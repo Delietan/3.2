@@ -1,1 +1,46 @@
-SUCK MY D1CK
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Welcome</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fade {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+        @keyframes colorChange {
+            0% { color: red; }
+            25% { color: blue; }
+            50% { color: green; }
+            75% { color: yellow; }
+            100% { color: red; }
+        }
+
+        .welcome-text {
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: spin 5s linear infinite, fade 3s ease-in-out infinite, colorChange 4s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-text">SUCK MY D1CK</div>
+</body>
+</html>
